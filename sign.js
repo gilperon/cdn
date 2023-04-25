@@ -13,16 +13,16 @@
  *   http://www.opensource.org/licenses/mit-license.php
  *   http://www.gnu.org/licenses/gpl.html
  */
-jQuery(document).ready(function(e) {
-        jQuery.fn.sign = function(options) {
-            var params = jQuery.fn.extend({
+$(document).ready(function(e) {
+        $.fn.sign = function(options) {
+            var params = $.fn.extend({
                 reset: options.resetButton ? options.resetButton : null,
                 width: options.width ? options.width : 500,
                 height: options.height ? options.height : 300,
                 lineWidth: options.lineWidth ? options.lineWidth : 10,
             }, options);
 
-            var canvas = jQuery(this);
+            var canvas = $(this);
             
             var lineWidth = params.lineWidth;
             
